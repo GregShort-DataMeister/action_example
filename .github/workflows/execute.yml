@@ -1,0 +1,12 @@
+name: Simple Execution
+
+on:
+  # This event lets us manually trigger (dispatch) the workflow
+  workflow_dispatch:
+
+jobs:
+  print_executed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Executed
+        run: echo "Executed"
